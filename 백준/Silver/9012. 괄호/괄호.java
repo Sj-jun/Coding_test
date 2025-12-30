@@ -8,15 +8,14 @@ class Main {
         int T = Integer.parseInt(br.readLine());
 
         String[] arr = new String[T];
-        for(int i=0; i<T; i++){
-            String V = br.readLine();
-            arr[i] = V;
-        }
 
         int count1 = 0;
         int count2 = 0;
 
         for(int i=0; i<T; i++){
+            String V = br.readLine();
+            arr[i] = V;
+
             for(int j=0; j<arr[i].length(); j++){
                 if(arr[i].charAt(j) == '(')
                     count1++;
@@ -36,7 +35,5 @@ class Main {
             count1 = 0;
             count2 = 0;
         }
-        
-
     }
 }
